@@ -6,7 +6,7 @@ from keep_alive import keep_alive
 keep_alive()
 
 
-bot_token = '6334994010:AAEka068QXAJen3QmsBGQujsNhFvPVtNZO0'  # Thay YOUR_BOT_TOKEN bằng mã token của bot của bạn
+bot_token = 'token'  # Thay YOUR_BOT_TOKEN bằng mã token của bot của bạn
 bot = telebot.TeleBot(bot_token)
 processes = []
 
@@ -22,7 +22,7 @@ def lqm_sms(message):
             bot.reply_to(message, '🚀SỐ ĐIỆN THOẠI KHÔNG HỢP LỆ !🚀')
             return
         if phone_number in [
-            '113', '911', '114', '115', '0387069080', '0344556382', '0819876977'
+            '113', '911', '114', '115'
         ]:
             # Số điện thoại nằm trong danh sách cấm
             bot.reply_to(
